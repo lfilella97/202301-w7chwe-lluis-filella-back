@@ -1,4 +1,5 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
+
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "node",
@@ -7,7 +8,8 @@ module.exports = {
   collectCoverageFrom: [
     "src/**/*.ts",
     "!src/index.ts",
-    "!./jest.config.cjs",
     "!src/loadEnvironment.ts",
+    "!src/server/startServer.ts",
+    "!src/database/connectDatabase.ts",
   ],
 };
