@@ -1,1 +1,1 @@
-const a = 4;
+import "loadEnvironment.js";
