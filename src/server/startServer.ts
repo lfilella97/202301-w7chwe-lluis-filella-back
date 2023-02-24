@@ -1,5 +1,5 @@
 import debug from "debug";
-import app from "./index";
+import app from "./app.js";
 
 const createDebug = debug("lovefriends:server");
 
