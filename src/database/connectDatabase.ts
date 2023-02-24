@@ -1,12 +1,13 @@
 import debug from "debug";
 import mongoose from "mongoose";
 
-const createDebug = debug("users:database");
+const createDebug = debug("lovefriends:database");
 mongoose.set("strictQuery", false);
 
 const connectDatabase = async (url: string) => {
-  await mongoose.connect(url);
   createDebug("Database conected");
+
+  await mongoose.connect(url);
 };
 
 export default connectDatabase;
