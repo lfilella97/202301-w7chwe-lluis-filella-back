@@ -10,8 +10,8 @@ const response: Partial<Response> = {
 const next: NextFunction = jest.fn();
 
 describe("Given the controller generalError", () => {
-  describe("When it receives an error", () => {
-    test("Then it should emit a response with the error", async () => {
+  describe("When it receives a custom error of Path not found", () => {
+    test("Then it should emit a response with the error status 404", async () => {
       const error: CustomError = new CustomError(
         "Path not not found",
         404,
