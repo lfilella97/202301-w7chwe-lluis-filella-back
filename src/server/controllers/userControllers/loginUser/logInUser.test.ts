@@ -15,7 +15,6 @@ type RequestWithLluisCredentials = Request<
 const lluisCredentials: UserCredentials = {
   password: "12345678",
   userName: "lluis",
-  token: "",
 };
 
 const request: Partial<RequestWithLluisCredentials> = {
