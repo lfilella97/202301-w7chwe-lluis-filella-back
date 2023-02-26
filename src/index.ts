@@ -5,7 +5,7 @@ import debug from "debug";
 
 const createDebug = debug("lovefriends:root");
 
-const port = process.env.POR ?? 4000;
+const port = process.env.PORT ?? 4000;
 const databaseUrl: string = process.env.DATABASE_URL!;
 
 try {
